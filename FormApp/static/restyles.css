@@ -1,0 +1,63 @@
+/* CSS resets */
+*{
+	vertical-align: baseline;
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+#container{
+   margin: 0 auto;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   background-color: rgb(70, 82, 248);
+   height: 100vh;
+}
+
+form{
+   width: 350px;
+   height: 450px;
+   margin-top: 9em;
+   padding: 2em;
+   background-color: rgb(249, 249, 249);
+   display: flex;
+   flex-flow: column;
+   justify-content: space-between
+}
+
+h1{
+   font-weight: lighter;
+   color: rgb(107, 107, 107);
+}
+
+p{
+   font-size: small;
+   color: rgb(107, 107, 107);
+}
+
+.output{
+   background-color: white;
+   height: 2em;
+   line-height: 2em;
+   border: 1px solid black;
+   text-indent: 0.5em;
+   vertical-align: middle;
+}
+
+.bigOutput{
+   background-color: white;
+   height: 7em;
+   line-height: 2em;
+   border: 1px solid black;
+   text-indent: 0.5em;
+}
+
+#button{
+   background-color: rgb(70, 82, 248);
+   color: rgb(249, 249, 249);
+   height: 2em;
+   border: 1px solid black;
+}

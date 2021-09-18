@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dojo Form</title>
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+   <div id="container">
+      <form action="/results" method = "POST">
+      {% csrf_token %}
+      <h1>Dojo practice form</h1>
+      <p>Reach out, or don't, we don't care.</p>
+
+      <input type="text" name="name" placeholder=" Please enter your name">
+
+      <select name="spot">
+         <option value="nowhere">Please select your location.</option>
+         <option value="online">Online</option>
+         <option value="SJ">San Jose</option>
+         <option value="Agrabah">Agrabah</option>
+         <option value="Chiba">Chiba City</option>
+      </select>
+
+         
+      <select name="lang">
+         <option value="none">Please select your favorite language.</option>
+         <option value="Python">Python</option>
+         <option value="JS">JavaScript</option>
+         <option value="C++">C++</option>
+         <option value="Fortran">Fortran</option>
+      </select>
+
+         <textarea name="comments" rows="4" cols="30" placeholder=" Comments (Optional)"></textarea>
+
+         <input type="Submit" value="Submit" id="button">
+      </form>
+   </div>
+</body>
+</html>

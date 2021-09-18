@@ -1,0 +1,1 @@
+A bootcamp exercise with Django, involving a forms and POST requests.
