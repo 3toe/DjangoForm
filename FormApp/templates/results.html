@@ -15,10 +15,10 @@
          <h1>Dojo form results</h1>
          <p>Here's your information:</p>
 
-         <p class="output">{{name}}</p>
-         <p class="output">{{spot}}</p>
-         <p class="output">{{lang}}</p>
-         <p class="bigOutput">{{comments}}</p>
+         <p class="output">{{request.session.name}}</p>
+         <p class="output">{{request.session.spot}}</p>
+         <p class="output">{{request.session.lang}}</p>
+         <p class="bigOutput">{{request.session.comments}}</p>
 
          <input type="Submit" value="Go Back" id="button">
       </form>
